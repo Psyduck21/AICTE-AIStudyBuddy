@@ -38,8 +38,7 @@ AiStudyBuddy/
 │   └── __init__.py
 ├── tests/
 │   ├── test_utils.py
-│   └── test_vectordb.py
-└── myenv/                  # (Virtual environment, gitignored)
+│   └── test_vectordb.py     
 ```
 
 ---
