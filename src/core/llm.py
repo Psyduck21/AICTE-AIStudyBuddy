@@ -6,11 +6,15 @@ import random
 import google.generativeai as genai
 from typing import List, Dict, Optional
 
+import streamlit as st
+
 from ..config import get_config_dict
 from ..utils.logger import logger
 
 config = get_config_dict()
-API_KEY = os.getenv("GEMINI_API_KEY")
+API_KEY = st.secrets.get("gemini_api_key")
+if not API_KEY: 
+    logger.error("Missing GEMINI_API_KEY in .env file")
 MAX_CHUNK_TOKENS = config["MAX_CHUNK_TOKENS"]
 LLM_MODEL = config["LLM_MODEL"]
 TEMPERATURE = config["TEMPERATURE"]
