@@ -7,12 +7,14 @@ import google.generativeai as genai
 from typing import List, Dict, Optional
 
 import streamlit as st
+from dotenv import load_dotenv
 
 from ..config import get_config_dict
 from ..utils.logger import logger
 
 config = get_config_dict()
-API_KEY = st.secrets.get("gemini_api_key")
+load_dotenv()
+API_KEY = st.secrets.get("gemini_api_key") or os.getenv("gemini_api_key")
 if not API_KEY: 
     logger.error("Missing GEMINI_API_KEY in .env file")
 MAX_CHUNK_TOKENS = config["MAX_CHUNK_TOKENS"]

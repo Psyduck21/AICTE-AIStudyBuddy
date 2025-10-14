@@ -9,12 +9,13 @@ import google.generativeai as genai
 from src.config import get_config_dict
 from src.utils.logger import logger
 import streamlit as st
+from dotenv import load_dotenv
 
 # Add the project root to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-
+load_dotenv()
 config = get_config_dict()
-API_KEY = st.secrets.get("gemini_api_key")
+API_KEY = st.secrets.get("gemini_api_key") or os.getenv("gemini_api_key")
 if not API_KEY:
     logger.error("Missing GEMINI_API_KEY in .env file")
 
