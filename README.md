@@ -401,7 +401,7 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 - GitHub Issues: Bug reports/Feature requests
 - Documentation: Installation/Usage help
-- Email: support@aistudybuddy.com
+- Email: akshat.prj@gmail.com
 
 ---
 
