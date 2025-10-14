@@ -1,4 +1,3 @@
-ai-study-buddy-pro/
 # 📘 AI Study Buddy Pro
 
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://python.org)
