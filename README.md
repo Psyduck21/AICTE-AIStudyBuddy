@@ -1,4 +1,3 @@
-ai-study-buddy-pro/
 # 📘 AI Study Buddy Pro
 
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://python.org)
@@ -38,8 +37,7 @@ AiStudyBuddy/
 │   └── __init__.py
 ├── tests/
 │   ├── test_utils.py
-│   └── test_vectordb.py
-└── myenv/                  # (Virtual environment, gitignored)
+│   └── test_vectordb.py     
 ```
 
 ---
